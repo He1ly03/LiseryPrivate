@@ -1,0 +1,33 @@
+name: LiseryPrivate
+version: '${version}'
+main: He1ly03.LiseryPrivate
+api-version: '1.21'
+description: Chunk claiming plugin for Survival servers
+author: He1ly03
+
+depend:
+  - WorldGuard
+  - WorldEdit
+
+softdepend:
+  - Vault
+  - LuckPerms
+  - PlaceholderAPI
+  - CoinsEngine
+
+commands:
+  chunk:
+    description: Main command for chunk management
+    usage: /<command> [subcommand] [args]
+    aliases: [c, private]
+
+permissions:
+  liseryprivate.wand:
+    description: Permission to use /chunk wand
+    default: true
+  liseryprivate.use:
+    description: Permission to use basic chunk functions
+    default: true
+  liseryprivate.admin:
+    description: Permission to use admin functions
+    default: op

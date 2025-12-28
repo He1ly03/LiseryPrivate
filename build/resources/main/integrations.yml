@@ -1,0 +1,19 @@
+plugin-integrations:
+
+  # LuckPerms позволяет делать лимиты для отдельных групп прав. Если не установлено, то у всех будет один лимит - default
+  LuckPerms:
+    enabled: true
+
+  # Vault - библиотека для плагинов экономики. Это одна из возможных систем экономики (в плагине доступны Vault, CoinsEngine)
+  Vault:
+    enabled: true
+
+  # CoinsEngine - плагин на экономику. Это одна из возможных систем экономики (в плагине доступны Vault, CoinsEngine)
+  CoinsEngine:
+    enabled: true
+    currency-name: money
+  
+  # PlaceholderAPI - плагин для расширенного отображения плейсхолдеров. Если установлен, то кроме плейсхолдеров плагина будут также доступны плейсхолдеры PlaceholderAPI (Statistic, Server, Player и другие)
+  PlaceholderAPI:
+    enabled: true
+

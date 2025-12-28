@@ -1,0 +1,141 @@
+# LiseryPrivate - Меню настроек чанка
+# Формат: LiseryMenu
+
+title: "<black>Настройки чанка"
+size: 27
+
+items:
+  build:
+    material: OAK_LOG
+    slot: "9"
+    display_name: "<gold>• <white>Строительство"
+    lore:
+      - "<yellow>• <gray>Ставить блоки на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %build_toggle%"
+    left_click_actions:
+      - "[settings_build_off]"
+    right_click_actions:
+      - "[settings_build_on]"
+
+  destroy:
+    material: IRON_PICKAXE
+    slot: "10"
+    display_name: "<gold>• <white>Разрушение"
+    lore:
+      - "<yellow>• <gray>Ломать блоки на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %destroy_toggle%"
+    left_click_actions:
+      - "[settings_destroy_off]"
+    right_click_actions:
+      - "[settings_destroy_on]"
+
+  use:
+    material: ARMOR_STAND
+    slot: "11"
+    display_name: "<gold>• <white>Использование"
+    lore:
+      - "<yellow>• <gray>Использовать блоки на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %use_toggle%"
+    left_click_actions:
+      - "[settings_use_off]"
+    right_click_actions:
+      - "[settings_use_on]"
+
+  switch:
+    material: PISTON
+    slot: "12"
+    display_name: "<gold>• <white>Переключение"
+    lore:
+      - "<yellow>• <gray>Переключать блоки на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %switch_toggle%"
+    left_click_actions:
+      - "[settings_switch_off]"
+    right_click_actions:
+      - "[settings_switch_on]"
+
+  mobs:
+    material: SHEARS
+    slot: "14"
+    display_name: "<gold>• <white>Мобы"
+    lore:
+      - "<yellow>• <gray>Убивать и использовать мобов на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %mobs_toggle%"
+    left_click_actions:
+      - "[settings_mobs_off]"
+    right_click_actions:
+      - "[settings_mobs_on]"
+
+  pvp:
+    material: DIAMOND_SWORD
+    slot: "15"
+    display_name: "<gold>• <white>PvP"
+    lore:
+      - "<yellow>• <gray>Убивать игроков на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %pvp_toggle%"
+    left_click_actions:
+      - "[settings_pvp_off]"
+    right_click_actions:
+      - "[settings_pvp_on]"
+
+  fire:
+    material: FLINT_AND_STEEL
+    slot: "16"
+    display_name: "<gold>• <white>Огонь"
+    lore:
+      - "<yellow>• <gray>Поджигать огонь на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %fire_toggle%"
+    left_click_actions:
+      - "[settings_fire_off]"
+    right_click_actions:
+      - "[settings_fire_on]"
+
+  explosion:
+    material: TNT
+    slot: "17"
+    display_name: "<gold>• <white>Взрывы"
+    lore:
+      - "<yellow>• <gray>Взрывать динамит на вашем чанке"
+      - ""
+      - "<yellow>ЛКМ <gray>› <red>Запретить"
+      - "<yellow>ПКМ <gray>› <green>Разрешить"
+      - ""
+      - "<white>На данный момент: %explosion_toggle%"
+    left_click_actions:
+      - "[settings_explosion_off]"
+    right_click_actions:
+      - "[settings_explosion_on]"
+
+  region:
+    material: GRASS_BLOCK
+    slot: "22"
+    display_name: "<yellow>• <white>Заприваченные чанки"
+    left_click_actions:
+      - "[open_menu] private"

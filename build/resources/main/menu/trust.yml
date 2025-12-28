@@ -1,0 +1,46 @@
+# LiseryPrivate - Меню доверенных
+# Формат: LiseryMenu
+
+title: "<black>Доверенные лица"
+size: 36
+
+items:
+  # Шаблон для доверенных (slots: диапазон)
+  trust:
+    material: PLAYER_HEAD
+    slots: "0-26"
+    skull_owner: "%player_name%"
+    display_name: "<white>Доверенный: <green>%player_name%"
+    lore:
+      - "<yellow>Клик <gray>› <white>Убрать из доверенных"
+    left_click_actions:
+      - "[trust_remove]"
+      - "[confirm]"
+
+  next-page:
+    material: ARROW
+    slot: "32"
+    display_name: "<aqua>След. <white>страница"
+    left_click_actions:
+      - "[next_page]"
+
+  prev-page:
+    material: ARROW
+    slot: "30"
+    display_name: "<aqua>Пред. <white>страница"
+    left_click_actions:
+      - "[prev_page]"
+
+  private-btn:
+    material: GRASS_BLOCK
+    slot: "28"
+    display_name: "<yellow>• <white>Заприваченные чанки"
+    left_click_actions:
+      - "[open_menu] private"
+
+  auction-btn:
+    material: BOOK
+    slot: "34"
+    display_name: "<yellow>• <white>Аукцион чанков"
+    left_click_actions:
+      - "[open_menu] sell"

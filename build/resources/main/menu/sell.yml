@@ -1,0 +1,61 @@
+# LiseryPrivate - Меню аукциона
+# Формат: LiseryMenu
+
+title: "<black>Аукцион чанков"
+size: 36
+
+items:
+  # Шаблон для чанков на продаже (slots: диапазон)
+  sell:
+    material: PAPER
+    slots: "0-26"
+    display_name: "<white>Чанк <green>%chunk%"
+    lore:
+      - "<yellow>• <white>Владелец: <yellow>%owner%"
+      - "<yellow>• <white>Цена: <green>%price%"
+      - ""
+      - "<gold>ЛКМ <gray>› <white>Купить чанк"
+      - "<yellow>СКМ <gray>› <white>Телепортация к чанку"
+    left_click_actions:
+      - "[auc_buy]"
+      - "[confirm]"
+    middle_click_actions:
+      - "[auc_teleport]"
+
+  my-sells:
+    material: MAP
+    slot: "31"
+    display_name: "<white>Список чанков <green>на продаже"
+    lore:
+      - "<gray>Клик для просмотра ваших чанков в продаже"
+    left_click_actions:
+      - "[open_menu] sell-list"
+
+  next-page:
+    material: ARROW
+    slot: "32"
+    display_name: "<aqua>След. <white>страница"
+    left_click_actions:
+      - "[next_page]"
+
+  prev-page:
+    material: ARROW
+    slot: "30"
+    display_name: "<aqua>Пред. <white>страница"
+    left_click_actions:
+      - "[prev_page]"
+
+  trust-btn:
+    material: PLAYER_HEAD
+    slot: "28"
+    skull_owner: "%player_name%"
+    display_name: "<yellow>• <white>Доверенные лица"
+    left_click_actions:
+      - "[open_menu] trust"
+
+  private-btn:
+    material: GRASS_BLOCK
+    slot: "34"
+    display_name: "<yellow>• <white>Заприваченные чанки"
+    left_click_actions:
+      - "[open_menu] private"

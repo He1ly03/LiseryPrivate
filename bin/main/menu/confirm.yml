@@ -1,0 +1,25 @@
+# LiseryPrivate - Меню подтверждения
+# Формат: LiseryMenu
+
+title: "<black>Подтверждение"
+size: 27
+hide_items: true
+
+items:
+  accept:
+    material: LIME_WOOL
+    slot: "11"
+    display_name: "<green>Подтвердить"
+    lore:
+      - "<gray>Клик для подтверждения действия"
+    left_click_actions:
+      - "[accept]"
+
+  deny:
+    material: RED_WOOL
+    slot: "15"
+    display_name: "<red>Отменить"
+    lore:
+      - "<gray>Клик для отмены действия"
+    left_click_actions:
+      - "[deny]"
